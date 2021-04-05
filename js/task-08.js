@@ -2,9 +2,11 @@ const checkInput = document.querySelector('input');
 console.log(checkInput);
 const btns = document.querySelectorAll('button');
 console.log(btns);
-const boxesCont = document.querySelector('#boxes')
+const boxesCont = document.querySelector('#boxes');
 console.log(boxesCont)
-// checkInput.addEventListener("input",createBoxes)
+
+
+
 const createBoxes = amount => {
     const boxesArr = [];
     let dimension = 30;
@@ -30,22 +32,19 @@ const createBoxes = amount => {
     }
 
     boxesCont.append(...boxesArr)
-    console.log(createBoxes)
+    
 }
-
-let counterValue = 0;
 btns.forEach(function (btn) {
      btn.addEventListener('click', function (e) {
         if (btn.dataset.action === 'render') {
             createBoxes(checkInput.value);
-            
+            console.log(checkInput.value)
         }
         else if (btn.dataset.action === 'destroy') {
              boxesCont.innerHTML = '';
          }
          
-        checkInput.value = counterValue
-        
+     
     });
     
 })
