@@ -4,7 +4,7 @@ console.log(`В списке ${allItems.length} категории.`);
 
 
 const listItem = document.querySelector('.item')
-
+console.log(allItems[0].lastElementChild.children.length)
 console.log('Категория:', listItem.firstElementChild.textContent);
 console.log(`Количество элементов: ${listItem.lastElementChild.children.length}`);
 
