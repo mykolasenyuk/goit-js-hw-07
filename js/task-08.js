@@ -23,8 +23,8 @@ const createBoxes = amount => {
         box.style.height = `${dimension}px`;
         box.style.backgroundColor = color;
         box.style.position = 'relative'
-        box.style.left = ` ${Math.floor(Math.random() * 75)}%`;
-        box.style.top = ` ${Math.floor(Math.random() * 100)}%`;
+        box.style.left = `${Math.floor(Math.random() * 75)}%`;
+        box.style.top = `${Math.floor(Math.random() * 100)}%`;
 
         boxesArr.push(box);
 
